@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class NetworkManager {
+final class NetworkManager<T: Decodable> {
     private init() { }
     
     private static func createRequest(for apiType: some APIType) -> Result<URLRequest, NetworkError> {
@@ -24,13 +24,13 @@ final class NetworkManager {
         return .success(URLRequest(url: url))
     }
     
-    static func fetchData<T: Decodable>(for apiType: some APIType, completion: @escaping (Result<T, NetworkError>) -> Void) {
+    static func fetchData(for apiType: some APIType, completion: @escaping (Result<T, NetworkError>) -> Void) {
         let request = createRequest(for: apiType)
         
         switch request {
         case .success(let request):
             URLSession.shared.dataTask(with: request) { data, response, error in
-                if let error {
+                if error != nil {
                     completion(.failure(.dataTaskFail))
                     
                     return
