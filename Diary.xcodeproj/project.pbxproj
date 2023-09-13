@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		284C77212AB1DE1200E7A8DC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C77202AB1DE1200E7A8DC /* LocationManager.swift */; };
+		284C77232AB1E9DD00E7A8DC /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 284C77222AB1E9DD00E7A8DC /* APIKey.plist */; };
 		BA0AF13C2AA2F782006A49DC /* DetailDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0AF13B2AA2F782006A49DC /* DetailDiaryViewController.swift */; };
 		BA212A642AAAACDF0053240A /* DiaryPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA212A632AAAACDF0053240A /* DiaryPersistentContainer.swift */; };
 		BA2F60442A9D7B5F002FE03D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BA2F60432A9D7B5F002FE03D /* .swiftlint.yml */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		232E420C65D24623D091887A /* Pods-Diary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diary.release.xcconfig"; path = "Target Support Files/Pods-Diary/Pods-Diary.release.xcconfig"; sourceTree = "<group>"; };
 		284C77202AB1DE1200E7A8DC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		284C77222AB1E9DD00E7A8DC /* APIKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKey.plist; sourceTree = "<group>"; };
 		2D7A168934BD5CDB4554FC56 /* Pods-Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diary.debug.xcconfig"; path = "Target Support Files/Pods-Diary/Pods-Diary.debug.xcconfig"; sourceTree = "<group>"; };
 		BA0AF13B2AA2F782006A49DC /* DetailDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDiaryViewController.swift; sourceTree = "<group>"; };
 		BA212A632AAAACDF0053240A /* DiaryPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPersistentContainer.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				BA2F60462A9D8857002FE03D /* View */,
 				BA2F60472A9D8860002FE03D /* Controller */,
 				C739AE35284DF28600741E8F /* Info.plist */,
+				284C77222AB1E9DD00E7A8DC /* APIKey.plist */,
 				C739AE2D284DF28600741E8F /* Diary.xcdatamodeld */,
 			);
 			path = Diary;
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA2F60442A9D7B5F002FE03D /* .swiftlint.yml in Resources */,
+				284C77232AB1E9DD00E7A8DC /* APIKey.plist in Resources */,
 				C739AE34284DF28600741E8F /* LaunchScreen.storyboard in Resources */,
 				C739AE31284DF28600741E8F /* Assets.xcassets in Resources */,
 			);
