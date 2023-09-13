@@ -11,6 +11,7 @@
 		284C77232AB1E9DD00E7A8DC /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 284C77222AB1E9DD00E7A8DC /* APIKey.plist */; };
 		284C77252AB1F17D00E7A8DC /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C77242AB1F17D00E7A8DC /* Bundle+.swift */; };
 		284C772F2AB22A4B00E7A8DC /* APIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C772E2AB22A4B00E7A8DC /* APIType.swift */; };
+		284C77312AB22A6D00E7A8DC /* OpenWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C77302AB22A6D00E7A8DC /* OpenWeatherAPI.swift */; };
 		BA0AF13C2AA2F782006A49DC /* DetailDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0AF13B2AA2F782006A49DC /* DetailDiaryViewController.swift */; };
 		BA212A642AAAACDF0053240A /* DiaryPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA212A632AAAACDF0053240A /* DiaryPersistentContainer.swift */; };
 		BA2F60442A9D7B5F002FE03D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BA2F60432A9D7B5F002FE03D /* .swiftlint.yml */; };
@@ -34,6 +35,7 @@
 		284C77222AB1E9DD00E7A8DC /* APIKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKey.plist; sourceTree = "<group>"; };
 		284C77242AB1F17D00E7A8DC /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
 		284C772E2AB22A4B00E7A8DC /* APIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIType.swift; sourceTree = "<group>"; };
+		284C77302AB22A6D00E7A8DC /* OpenWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherAPI.swift; sourceTree = "<group>"; };
 		2D7A168934BD5CDB4554FC56 /* Pods-Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diary.debug.xcconfig"; path = "Target Support Files/Pods-Diary/Pods-Diary.debug.xcconfig"; sourceTree = "<group>"; };
 		BA0AF13B2AA2F782006A49DC /* DetailDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDiaryViewController.swift; sourceTree = "<group>"; };
 		BA212A632AAAACDF0053240A /* DiaryPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPersistentContainer.swift; sourceTree = "<group>"; };
@@ -81,6 +83,14 @@
 				284C772E2AB22A4B00E7A8DC /* APIType.swift */,
 			);
 			path = Interface;
+			sourceTree = "<group>";
+		};
+		284C772D2AB2276C00E7A8DC /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				284C77302AB22A6D00E7A8DC /* OpenWeatherAPI.swift */,
+			);
+			path = Implementation;
 			sourceTree = "<group>";
 		};
 		516FBF7FEF93783441FFD6BC /* Frameworks */ = {
@@ -329,6 +339,7 @@
 				BA2F60532A9DC7E2002FE03D /* DiaryDateFormatter.swift in Sources */,
 				C739AE27284DF28600741E8F /* SceneDelegate.swift in Sources */,
 				284C77212AB1DE1200E7A8DC /* LocationManager.swift in Sources */,
+				284C77312AB22A6D00E7A8DC /* OpenWeatherAPI.swift in Sources */,
 				C739AE2F284DF28600741E8F /* Diary.xcdatamodeld in Sources */,
 				BA0AF13C2AA2F782006A49DC /* DetailDiaryViewController.swift in Sources */,
 				BA2F604B2A9D8994002FE03D /* DiaryTableViewCell.swift in Sources */,
