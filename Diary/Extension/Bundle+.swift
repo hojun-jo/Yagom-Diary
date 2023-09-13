@@ -8,7 +8,7 @@
 import Foundation
 
 extension Bundle {
-    var openWeatherAPIKey: String {
+    static var openWeatherAPIKey: String {
         guard let filePath = Bundle.main.path(forResource: "APIKey", ofType: "plist"),
               let plistDictionary = NSDictionary(contentsOfFile: filePath) else {
             fatalError("Couldn't find file 'APIKey.plist'.")
