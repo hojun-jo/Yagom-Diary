@@ -14,6 +14,8 @@
 		284C772A2AB2273000E7A8DC /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C77292AB2273000E7A8DC /* NetworkError.swift */; };
 		284C772F2AB22A4B00E7A8DC /* APIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C772E2AB22A4B00E7A8DC /* APIType.swift */; };
 		284C77312AB22A6D00E7A8DC /* OpenWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C77302AB22A6D00E7A8DC /* OpenWeatherAPI.swift */; };
+		284C77342AB22F1000E7A8DC /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C77332AB22F1000E7A8DC /* Weather.swift */; };
+		284C77372AB22F6D00E7A8DC /* OpenWeatherInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C77362AB22F6D00E7A8DC /* OpenWeatherInformation.swift */; };
 		BA0AF13C2AA2F782006A49DC /* DetailDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0AF13B2AA2F782006A49DC /* DetailDiaryViewController.swift */; };
 		BA212A642AAAACDF0053240A /* DiaryPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA212A632AAAACDF0053240A /* DiaryPersistentContainer.swift */; };
 		BA2F60442A9D7B5F002FE03D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BA2F60432A9D7B5F002FE03D /* .swiftlint.yml */; };
@@ -40,6 +42,8 @@
 		284C77292AB2273000E7A8DC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		284C772E2AB22A4B00E7A8DC /* APIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIType.swift; sourceTree = "<group>"; };
 		284C77302AB22A6D00E7A8DC /* OpenWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherAPI.swift; sourceTree = "<group>"; };
+		284C77332AB22F1000E7A8DC /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		284C77362AB22F6D00E7A8DC /* OpenWeatherInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherInformation.swift; sourceTree = "<group>"; };
 		2D7A168934BD5CDB4554FC56 /* Pods-Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diary.debug.xcconfig"; path = "Target Support Files/Pods-Diary/Pods-Diary.debug.xcconfig"; sourceTree = "<group>"; };
 		BA0AF13B2AA2F782006A49DC /* DetailDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDiaryViewController.swift; sourceTree = "<group>"; };
 		BA212A632AAAACDF0053240A /* DiaryPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPersistentContainer.swift; sourceTree = "<group>"; };
@@ -105,6 +109,23 @@
 			path = Implementation;
 			sourceTree = "<group>";
 		};
+		284C77322AB22D1100E7A8DC /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				284C77352AB22F1500E7A8DC /* OpenWeather */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		284C77352AB22F1500E7A8DC /* OpenWeather */ = {
+			isa = PBXGroup;
+			children = (
+				284C77362AB22F6D00E7A8DC /* OpenWeatherInformation.swift */,
+				284C77332AB22F1000E7A8DC /* Weather.swift */,
+			);
+			path = OpenWeather;
+			sourceTree = "<group>";
+		};
 		516FBF7FEF93783441FFD6BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +137,7 @@
 		BA2F60452A9D884C002FE03D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				284C77322AB22D1100E7A8DC /* DTO */,
 				284C772B2AB2275A00E7A8DC /* API */,
 				284C77282AB2272300E7A8DC /* Error */,
 				BA2F60522A9DC7E2002FE03D /* DiaryDateFormatter.swift */,
@@ -346,6 +368,7 @@
 				BA5795062AA801E00061FE0A /* Array+.swift in Sources */,
 				BA2F604E2A9D8B5E002FE03D /* IdentifierGenerator.swift in Sources */,
 				BA2F60512A9D9014002FE03D /* UITableViewCell+.swift in Sources */,
+				284C77342AB22F1000E7A8DC /* Weather.swift in Sources */,
 				284C772F2AB22A4B00E7A8DC /* APIType.swift in Sources */,
 				C739AE25284DF28600741E8F /* AppDelegate.swift in Sources */,
 				284C77252AB1F17D00E7A8DC /* Bundle+.swift in Sources */,
@@ -359,6 +382,7 @@
 				C739AE2F284DF28600741E8F /* Diary.xcdatamodeld in Sources */,
 				BA0AF13C2AA2F782006A49DC /* DetailDiaryViewController.swift in Sources */,
 				BA2F604B2A9D8994002FE03D /* DiaryTableViewCell.swift in Sources */,
+				284C77372AB22F6D00E7A8DC /* OpenWeatherInformation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
