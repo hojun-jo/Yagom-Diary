@@ -10,6 +10,7 @@
 		284C77212AB1DE1200E7A8DC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C77202AB1DE1200E7A8DC /* LocationManager.swift */; };
 		284C77232AB1E9DD00E7A8DC /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 284C77222AB1E9DD00E7A8DC /* APIKey.plist */; };
 		284C77252AB1F17D00E7A8DC /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C77242AB1F17D00E7A8DC /* Bundle+.swift */; };
+		284C77272AB2004800E7A8DC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C77262AB2004800E7A8DC /* NetworkManager.swift */; };
 		284C772A2AB2273000E7A8DC /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C77292AB2273000E7A8DC /* NetworkError.swift */; };
 		284C772F2AB22A4B00E7A8DC /* APIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C772E2AB22A4B00E7A8DC /* APIType.swift */; };
 		284C77312AB22A6D00E7A8DC /* OpenWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C77302AB22A6D00E7A8DC /* OpenWeatherAPI.swift */; };
@@ -35,6 +36,7 @@
 		284C77202AB1DE1200E7A8DC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		284C77222AB1E9DD00E7A8DC /* APIKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKey.plist; sourceTree = "<group>"; };
 		284C77242AB1F17D00E7A8DC /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
+		284C77262AB2004800E7A8DC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		284C77292AB2273000E7A8DC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		284C772E2AB22A4B00E7A8DC /* APIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIType.swift; sourceTree = "<group>"; };
 		284C77302AB22A6D00E7A8DC /* OpenWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherAPI.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				BA2F60522A9DC7E2002FE03D /* DiaryDateFormatter.swift */,
 				BA2F604C2A9D8AE6002FE03D /* Protocol */,
 				284C77202AB1DE1200E7A8DC /* LocationManager.swift */,
+				284C77262AB2004800E7A8DC /* NetworkManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				C739AE27284DF28600741E8F /* SceneDelegate.swift in Sources */,
 				284C772A2AB2273000E7A8DC /* NetworkError.swift in Sources */,
 				284C77212AB1DE1200E7A8DC /* LocationManager.swift in Sources */,
+				284C77272AB2004800E7A8DC /* NetworkManager.swift in Sources */,
 				284C77312AB22A6D00E7A8DC /* OpenWeatherAPI.swift in Sources */,
 				C739AE2F284DF28600741E8F /* Diary.xcdatamodeld in Sources */,
 				BA0AF13C2AA2F782006A49DC /* DetailDiaryViewController.swift in Sources */,
