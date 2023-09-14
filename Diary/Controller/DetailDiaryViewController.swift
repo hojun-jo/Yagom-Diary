@@ -36,7 +36,8 @@ final class DetailDiaryViewController: UIViewController {
     private func fetchDiaryData(_ data: DiaryEntity) {
         guard let title = data.title,
               let body = data.body,
-              let createdAt = data.createdAt  else {
+              let createdAt = data.createdAt,
+              let weatherIcon = data.weatherIcon else {
             
             return
         }
@@ -45,6 +46,7 @@ final class DetailDiaryViewController: UIViewController {
         diaryTextView.text = "\(title)\n\(body)"
         
         configureNavigationItem(date: createdAt)
+        fetchWeatherIcon(name: weatherIcon)
     }
     
     func saveDiaryData() {
@@ -192,5 +194,42 @@ extension DetailDiaryViewController {
         }
         
         return deleteSheetAction
+    }
+}
+
+extension DetailDiaryViewController {
+    private func fetchWeatherIcon(name: String) {
+        let openWeather = OpenWeatherIconAPI(icon: name)
+        
+        NetworkManager.fetchImage(for: openWeather) { result in
+            switch result {
+            case .success(let icon):
+                DispatchQueue.main.async {
+                    self.navigationItem.titleView = self.createTitleView(icon: icon)
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    private func createTitleView(icon: UIImage) -> UIStackView {
+        let stackView = UIStackView()
+        stackView.axis = .horizontal
+        
+        let imageView = UIImageView(image: icon)
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor, multiplier: 1).isActive = true
+        
+        let titleLabel = UILabel()
+        titleLabel.text = navigationItem.title
+        titleLabel.font = UIFont.preferredFont(forTextStyle: .title3)
+        
+        [imageView, titleLabel].forEach {
+            stackView.addArrangedSubview($0)
+        }
+        
+        return stackView
     }
 }
