@@ -18,6 +18,7 @@
 		284C77372AB22F6D00E7A8DC /* OpenWeatherInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C77362AB22F6D00E7A8DC /* OpenWeatherInformation.swift */; };
 		284C773F2AB2456D00E7A8DC /* OpenWeatherIconAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C773E2AB2456D00E7A8DC /* OpenWeatherIconAPI.swift */; };
 		284C77422AB2D87600E7A8DC /* Diary2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 284C77412AB2D87600E7A8DC /* Diary2.xcmappingmodel */; };
+		284C77442AB2DF3700E7A8DC /* LocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C77432AB2DF3700E7A8DC /* LocationManagerDelegate.swift */; };
 		BA0AF13C2AA2F782006A49DC /* DetailDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0AF13B2AA2F782006A49DC /* DetailDiaryViewController.swift */; };
 		BA212A642AAAACDF0053240A /* DiaryPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA212A632AAAACDF0053240A /* DiaryPersistentContainer.swift */; };
 		BA2F60442A9D7B5F002FE03D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BA2F60432A9D7B5F002FE03D /* .swiftlint.yml */; };
@@ -49,6 +50,7 @@
 		284C773E2AB2456D00E7A8DC /* OpenWeatherIconAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OpenWeatherIconAPI.swift; path = "../../../../../../../.Trash/ios-diary/Diary/Model/API/Implementation/OpenWeatherIconAPI.swift"; sourceTree = "<group>"; };
 		284C77402AB2D81800E7A8DC /* Diary 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Diary 2.xcdatamodel"; sourceTree = "<group>"; };
 		284C77412AB2D87600E7A8DC /* Diary2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Diary2.xcmappingmodel; sourceTree = "<group>"; };
+		284C77432AB2DF3700E7A8DC /* LocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerDelegate.swift; sourceTree = "<group>"; };
 		2D7A168934BD5CDB4554FC56 /* Pods-Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diary.debug.xcconfig"; path = "Target Support Files/Pods-Diary/Pods-Diary.debug.xcconfig"; sourceTree = "<group>"; };
 		BA0AF13B2AA2F782006A49DC /* DetailDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDiaryViewController.swift; sourceTree = "<group>"; };
 		BA212A632AAAACDF0053240A /* DiaryPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPersistentContainer.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				BA2F604D2A9D8B5E002FE03D /* IdentifierGenerator.swift */,
+				284C77432AB2DF3700E7A8DC /* LocationManagerDelegate.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				C739AE2F284DF28600741E8F /* Diary.xcdatamodeld in Sources */,
 				284C773F2AB2456D00E7A8DC /* OpenWeatherIconAPI.swift in Sources */,
 				BA0AF13C2AA2F782006A49DC /* DetailDiaryViewController.swift in Sources */,
+				284C77442AB2DF3700E7A8DC /* LocationManagerDelegate.swift in Sources */,
 				BA2F604B2A9D8994002FE03D /* DiaryTableViewCell.swift in Sources */,
 				284C77372AB22F6D00E7A8DC /* OpenWeatherInformation.swift in Sources */,
 			);
