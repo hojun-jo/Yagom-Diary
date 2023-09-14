@@ -9,7 +9,8 @@ import CoreLocation
 
 final class LocationManager: NSObject {
     private let locationManager = CLLocationManager()
-    private var isAuthorized = false
+    private(set) var isAuthorized = false
+    weak var delegate: LocationManagerDelegate?
     
     override init() {
         super.init()
@@ -32,7 +33,13 @@ final class LocationManager: NSObject {
 
 extension LocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print(locations.last?.coordinate)
+        guard isAuthorized,
+              let coordinate = locations.last?.coordinate else {
+            
+            return
+        }
+        
+        delegate?.fetchWeatherData(latitude: String(coordinate.latitude), longitude: String(coordinate.longitude))
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {

@@ -16,6 +16,7 @@ final class DiaryMainViewController: UIViewController {
     
     private let persistentContainer = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer
     private var diarylist: [DiaryEntity]?
+    private let locationManager = LocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,16 +35,27 @@ final class DiaryMainViewController: UIViewController {
     private func configureDelegates() {
         diaryTableView.delegate = self
         diaryTableView.dataSource = self
+        locationManager.delegate = self
     }
     
-    @objc private func didTapAddDiaryButton() {
+    private func pushDetailDiaryViewController(weather: String? = nil, weatherIcon: String? = nil) {
         guard let context = persistentContainer?.viewContext else { return }
         let diary = DiaryEntity(context: context)
         diary.createdAt = Date()
+        diary.weather = weather
+        diary.weatherIcon = weatherIcon
         
         let detailDiaryViewController = DetailDiaryViewController(diary: diary)
         
         self.navigationController?.pushViewController(detailDiaryViewController, animated: true)
+    }
+    
+    @objc private func didTapAddDiaryButton() {
+        if locationManager.isAuthorized {
+            locationManager.requestLocation()
+        } else {
+            pushDetailDiaryViewController()
+        }
     }
 }
 
@@ -147,5 +159,28 @@ extension DiaryMainViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         return UISwipeActionsConfiguration(actions: [deleteAction, shareAction])
+    }
+}
+
+extension DiaryMainViewController: LocationManagerDelegate {
+    func fetchWeatherData(latitude: String, longitude: String) {
+        let openWeather = OpenWeatherAPI(latitude: latitude, longitude: longitude)
+        
+        NetworkManager.fetchData(for: openWeather, objectType: OpenWeatherInformation.self) { result in
+            switch result {
+            case .success(let weatherInformation):
+                guard let weather = weatherInformation.weather.first?.main,
+                      let weatherIcon = weatherInformation.weather.first?.icon else {
+                    
+                    return
+                }
+                
+                DispatchQueue.main.async {
+                    self.pushDetailDiaryViewController(weather: weather, weatherIcon: weatherIcon)
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
 }
