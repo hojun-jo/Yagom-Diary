@@ -17,6 +17,7 @@
 		284C77342AB22F1000E7A8DC /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C77332AB22F1000E7A8DC /* Weather.swift */; };
 		284C77372AB22F6D00E7A8DC /* OpenWeatherInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C77362AB22F6D00E7A8DC /* OpenWeatherInformation.swift */; };
 		284C773F2AB2456D00E7A8DC /* OpenWeatherIconAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C773E2AB2456D00E7A8DC /* OpenWeatherIconAPI.swift */; };
+		284C77422AB2D87600E7A8DC /* Diary2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 284C77412AB2D87600E7A8DC /* Diary2.xcmappingmodel */; };
 		BA0AF13C2AA2F782006A49DC /* DetailDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0AF13B2AA2F782006A49DC /* DetailDiaryViewController.swift */; };
 		BA212A642AAAACDF0053240A /* DiaryPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA212A632AAAACDF0053240A /* DiaryPersistentContainer.swift */; };
 		BA2F60442A9D7B5F002FE03D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BA2F60432A9D7B5F002FE03D /* .swiftlint.yml */; };
@@ -46,6 +47,8 @@
 		284C77332AB22F1000E7A8DC /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		284C77362AB22F6D00E7A8DC /* OpenWeatherInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherInformation.swift; sourceTree = "<group>"; };
 		284C773E2AB2456D00E7A8DC /* OpenWeatherIconAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OpenWeatherIconAPI.swift; path = "../../../../../../../.Trash/ios-diary/Diary/Model/API/Implementation/OpenWeatherIconAPI.swift"; sourceTree = "<group>"; };
+		284C77402AB2D81800E7A8DC /* Diary 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Diary 2.xcdatamodel"; sourceTree = "<group>"; };
+		284C77412AB2D87600E7A8DC /* Diary2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Diary2.xcmappingmodel; sourceTree = "<group>"; };
 		2D7A168934BD5CDB4554FC56 /* Pods-Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diary.debug.xcconfig"; path = "Target Support Files/Pods-Diary/Pods-Diary.debug.xcconfig"; sourceTree = "<group>"; };
 		BA0AF13B2AA2F782006A49DC /* DetailDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDiaryViewController.swift; sourceTree = "<group>"; };
 		BA212A632AAAACDF0053240A /* DiaryPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPersistentContainer.swift; sourceTree = "<group>"; };
@@ -236,6 +239,7 @@
 				C739AE35284DF28600741E8F /* Info.plist */,
 				284C77222AB1E9DD00E7A8DC /* APIKey.plist */,
 				C739AE2D284DF28600741E8F /* Diary.xcdatamodeld */,
+				284C77412AB2D87600E7A8DC /* Diary2.xcmappingmodel */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -376,6 +380,7 @@
 				C739AE25284DF28600741E8F /* AppDelegate.swift in Sources */,
 				284C77252AB1F17D00E7A8DC /* Bundle+.swift in Sources */,
 				BA212A642AAAACDF0053240A /* DiaryPersistentContainer.swift in Sources */,
+				284C77422AB2D87600E7A8DC /* Diary2.xcmappingmodel in Sources */,
 				BA2F60532A9DC7E2002FE03D /* DiaryDateFormatter.swift in Sources */,
 				C739AE27284DF28600741E8F /* SceneDelegate.swift in Sources */,
 				284C772A2AB2273000E7A8DC /* NetworkError.swift in Sources */,
@@ -603,9 +608,10 @@
 		C739AE2D284DF28600741E8F /* Diary.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				284C77402AB2D81800E7A8DC /* Diary 2.xcdatamodel */,
 				C739AE2E284DF28600741E8F /* Diary.xcdatamodel */,
 			);
-			currentVersion = C739AE2E284DF28600741E8F /* Diary.xcdatamodel */;
+			currentVersion = 284C77402AB2D81800E7A8DC /* Diary 2.xcdatamodel */;
 			path = Diary.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
