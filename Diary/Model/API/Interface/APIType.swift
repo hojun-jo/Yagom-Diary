@@ -10,5 +10,4 @@ import Foundation
 protocol APIType {
     var baseURL: String { get }
     var queryItems: [URLQueryItem]? { get }
-    var apiKey: String { get }
 }

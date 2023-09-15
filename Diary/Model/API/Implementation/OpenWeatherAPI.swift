@@ -10,7 +10,7 @@ import Foundation
 struct OpenWeatherAPI: APIType {
     var baseURL = "https://api.openweathermap.org/data/2.5/weather"
     var queryItems: [URLQueryItem]?
-    var apiKey = Bundle.openWeatherAPIKey
+    private let apiKey = Bundle.openWeatherAPIKey
     
     init(latitude: String, longitude: String) {
         queryItems = [
